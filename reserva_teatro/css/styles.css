@@ -1,9 +1,16 @@
 
-h1{
+h1 {
     border-bottom-style: inset;
+    border-bottom-color: black;
 }
 
 img.poltrona{
     width: 24px;
     height: 16px;
+}
+
+figure{
+    display: inline-block;
+    font-size: 0.7 rem;
+    margin: 5px;
 }
