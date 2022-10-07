@@ -75,7 +75,7 @@ frm.addEventListener('submit', (e) => {
     }
 
     // validar se a poltrona já estiver reservada
-    if (reservadas.includes(poltrona.toString())){
+    if (reservadas.includes(poltrona)){
         alert(`A poltrona ${poltrona} já está reservada`)
         frm.inPoltrona.value=''
         frm.inPoltrona.focus()
