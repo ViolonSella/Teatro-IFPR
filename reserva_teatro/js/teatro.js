@@ -74,6 +74,15 @@ frm.addEventListener('submit', (e) => {
         return
     }
 
+    // validar se a poltrona já estiver reservada
+    if (reservadas.includes(poltrona.toString())){
+        alert(`A poltrona ${poltrona} já está reservada`)
+        frm.inPoltrona.value=''
+        frm.inPoltrona.focus()
+        return
+    }
+    
+
     // capturar a imagem da poltrona, filha de divPalco
     const imgPoltrona = divPalco.querySelectorAll('img')[poltrona-1]
 
