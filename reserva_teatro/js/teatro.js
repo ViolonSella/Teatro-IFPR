@@ -124,3 +124,19 @@ frm.btnConfirmar.addEventListener("click", () => {
     
 
 })
+
+frm.btnCancelar.addEventListener("click", () => {
+
+    // obtém o conteúdo do input
+    const poltrona = Number(frm.inPoltrona.value)
+
+    const ocupadas = localStorage.getItem("teatroOcupadas")?localStorage.getItem("teatroOcupadas").split(";"):[];
+
+    //verificar se não há poltronas ocupadas
+    if(ocupadas.length == 0){
+        alert("Não há poltronas ocupadas")
+        frm.inPoltrona.focus()
+        return
+    }
+
+})
